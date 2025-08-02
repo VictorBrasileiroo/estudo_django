@@ -4,6 +4,7 @@ class UserModel(models.Model):
     username = models.CharField(max_length=50)
     adress = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
+    vip = models.BooleanField(default=False)
 
     def __str__(self):
         return self.username
